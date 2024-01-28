@@ -40,19 +40,40 @@ border-width:3px;
 border-style:solid;
 border-color:black;
 }
-.skull{
-position: absolute;
-top: 42%;
-left: 50%;
-transform: translate(-50%, -70%);
+
+@media (min-width:750px){
+    .skull{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    }
+
+    .skull img{
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    pointer-events: none;
+    }
 }
 
-.skull img{
-width: 100%;
-max-width: 400px;
-max-height: 400px;
-pointer-events: none;
+@media (max-width:750px){
+    .skull{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    }
+
+    .skull img{
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    pointer-events: none;
+    }
 }
+
+
 
 .inquire{
 position: absolute;
@@ -106,6 +127,7 @@ h3{
     max-width: 700px;
     margin: auto;
     display: flex;
+    -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     text-shadow: 1px 1px 2px black;
 
