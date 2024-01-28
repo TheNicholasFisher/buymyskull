@@ -102,7 +102,7 @@ border-radius: 40px 0 40px 0;
 }
 
 .inquire a{
-    text-decoration: none;
+    text-decoration: underline;
     color: rgb(219, 219, 219);
 }
 
