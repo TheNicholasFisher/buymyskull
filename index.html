@@ -59,18 +59,20 @@
         <div class="inquire">
             <a target="_blank" href="mailto:nicholasfisher004@gmail.com?subject=Skull%20Inquiry&body=Hello.%20Before%20requesting%20more%20info%2C%20please%20fill%20out%20this%20information%3A%0A%0AName%3A%0AStreet%20%26%20Number%3A%0ACity%2C%20State%20Zip%20Code%3A%0A%0APlease%20provide%20proof%20of%20income."><h1>INQUIRE</h1></a>
         </div>
-        <div class="popup" onclick="myFunction()">Content Disclaimer
+        <div class="popup" onclick="openClose()">Content Disclaimer
         </div>
-        <div>
-            <span onclick="myFunction()" class="popuptext" id="myPopup">This website was created with artistic intent. The illegal and unethical sale of bones across the globe is increasing at an alarming rate. For more information <a target="_blank" href="https://interactive.aljazeera.com/aje/2017/malawi-killed-for-their-bones/index.html">click here.</a></span>
+        <div class="clickoff" onclick="openClose()" id="click">
+            <span onclick="openClose()" class="popuptext" id="myPopup">This website was created with artistic intent. The illegal and unethical sale of bones across the globe is increasing at an alarming rate. For more information <a target="_blank" href="https://interactive.aljazeera.com/aje/2017/malawi-killed-for-their-bones/index.html">click here.</a></span>
         </div>
     </div>
 </body>
 <script>
-    // When the user clicks on <div>, open the popup
-    function myFunction() {
+
+    function openClose() {
       var popup = document.getElementById("myPopup");
       popup.classList.toggle("show");
+      var popup = document.getElementById("click");
+      popup.classList.toggle("off");
     }
     </script>
 </html>
