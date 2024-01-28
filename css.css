@@ -60,7 +60,7 @@ border-color:black;
 @media (max-width:750px){
     .skull{
     position: absolute;
-    top: 38%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -70%);
     }
